@@ -58,17 +58,21 @@ main {
 
 .card h2 {
     font-size: 42px;
-    line-height: 1.1;
-    margin: 0 0 35px 0;
-    text-align: left;
+    margin-bottom: 35px;
     font-weight: 800;
 }
 
 .card h3 {
     font-size: 24px;
     margin: 34px 0 14px 0;
-    text-align: left;
     font-weight: 700;
+}
+
+.card h4 {
+    font-size: 20px;
+    margin: 25px 0 10px 0;
+    font-weight: 600;
+    opacity: 0.9;
 }
 
 .card p,
@@ -78,7 +82,6 @@ main {
 }
 
 .card ul {
-    margin: 0;
     padding-left: 26px;
 }
 
@@ -103,28 +106,4 @@ a {
 
 em {
     font-style: italic;
-}
-
-@media (max-width: 700px) {
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .card {
-        padding: 32px 26px;
-        border-radius: 20px;
-    }
-
-    .card h2 {
-        font-size: 32px;
-    }
-
-    .card p,
-    .card li {
-        font-size: 17px;
-    }
-
-    .schema {
-        border-radius: 14px;
-    }
 }
