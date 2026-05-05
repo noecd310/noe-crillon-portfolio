@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noé Crillon-Demetz</title>
+    <link rel="stylesheet" href="style.css?v=8">
+</head>
 
+<body>
+
+<section class="hero">
+    <h2 class="name">NOÉ CRILLON-DEMETZ</h2>
+    <h1>Alternance Ingénieur</h1>
+
+    <p class="subtitle">
+        Technicien d’exploitation chez towerCast – 40 sites (FM, DAB+, TNT)<br>
+        Spécialisation : diagnostic réseau, transmission radio et intervention terrain
+    </p>
+
+    <div class="intro">
+        <p>Admis en cycle ingénieur à PolyTech Nancy (IA2R) à la rentrée 2026, je souhaite poursuivre mon parcours en alternance afin de monter en compétences en ingénierie réseaux, supervision et automatisation.</p>
+        <p>Ce portfolio présente des exemples concrets de situations techniques, projets réseau et analyses.</p>
+    </div>
+</section>
+
+<main>
+
+    <div class="logo-container">
+        <a href="https://www.towercast.fr/" target="_blank">
+            <img src="towerCast-logo.png" alt="Logo towerCast">
+        </a>
+    </div>
+
+    <section class="card">
+        <h2>Diagnostic d’une perte de signal</h2>
+
+        <h3>Contexte</h3>
+        <p>Un site de diffusion présentait une interruption de service</p>
+
+        <h3>Architecture simplifiée</h3>
+        <img class="schema" src="schema-fm.png" alt="Schéma chaîne de transmission FM">
+
+        <h3>Problème identifié</h3>
+        <p>Absence de signal en sortie d’un équipement de diffusion</p>
+
+        <h3>Démarche</h3>
+        <ul>
+            <li>Analyse du récepteur satellite 2wcom : <em>baisse du niveau RF en entrée</em></li>
+            <li>Contrôle de la liaison : <em>parabole → récepteur SAT 2wcom</em></li>
+            <li>Analyse de l’état de la parabole</li>
+        </ul>
+
+        <h3>Actions réalisées</h3>
+        <ul>
+            <li>Contrôle de la qualité des connecteurs : <em>mauvais branchement, étanchéité, lame cassée</em></li>
+            <li>Vérification de l’état des câbles : <em>surchauffe, courbure, détérioration</em></li>
+            <li>Analyse du pointage satellite avec appareil de mesure : <em>Hexylon</em></li>
+        </ul>
+
+        <h3>Résultat</h3>
+        <p>Repointage satellite permettant la remise en service du site et le rétablissement de la diffusion</p>
+
+        <h3>Compétences développées</h3>
+        <ul>
+            <li>Diagnostic multi-niveaux</li>
+            <li>Analyse de transmission</li>
+            <li>Intervention sur équipements télécoms</li>
+            <li>Résolution terrain</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Déploiement d’infrastructures télécom – Projet APRR</h2>
+
+        <h3>Contexte</h3>
+        <p>Reprise d’environ 90 sites APRR par towerCast à la suite d’un appel d’offres</p>
+
+        <h3>Travaux réalisés</h3>
+
+        <h4>Avant intervention</h4>
+        <ul>
+            <li>Configuration en agence des équipements : <em>modem 4G HubOne, PDU APC, switch Cisco, RAMI FDI 804</em></li>
+            <li>Gestion des accès aux sites techniques : <em>mise en place d’un protocole d’accès autoroutier avec APRR, recensement des sites dans SharePoint</em></li>
+            <li>Préparation du matériel : <em>consommables, outillage, EPI</em></li>
+        </ul>
+
+        <h4>Pendant intervention</h4>
+        <ul>
+            <li>Installation et mise en service sur site : <em>raccordements, connexion réseau, remontées d'alarmes, nettoyage, étiquetage</em></li>
+        </ul>
+
+        <h4>Après intervention</h4>
+        <ul>
+            <li>Suivi et contrôle du projet à distance : <em>rectification et adaptation du matériel/configuration, recherche de pannes</em></li>
+        </ul>
+
+        <h3>Compétences développées</h3>
+        <ul>
+            <li>Déploiement d’infrastructures</li>
+            <li>Préparation de matériel</li>
+            <li>Coordination d’interventions terrain</li>
+            <li>Supervision à distance</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Contact</h2>
+        <p>Je me tiens à votre disposition pour toute information complémentaire ou pour un entretien</p>
+
+        <p><strong>Courriel :</strong> noe.crillon@gmail.com</p>
+        <p><strong>Téléphone :</strong> +33 6 58 94 85 55</p>
+
+        <p><strong>LinkedIn :</strong> 
+            <a href="https://fr.linkedin.com/in/no%C3%A9-crillon-demetz-188900296" target="_blank">
+                Voir mon profil LinkedIn
+            </a>
+        </p>
+
+        <h3>Référence professionnelle</h3>
+        <p>Sur demande, je peux vous mettre en relation avec mon maître d’apprentissage :</p>
+        <p>
+            <strong>M. Laurent BATHELIER - Responsable Région Nord-Est</strong><br>
+            Maître d’apprentissage – towerCast<br>
+            Téléphone : +33 6 71 60 81 97<br>
+            Email : lbathelier@towercast.fr
+        </p>
+    </section>
+
+</main>
+
+</body>
+</html>
