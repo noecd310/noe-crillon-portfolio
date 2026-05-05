@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noé Crillon-Demetz</title>
-    <link rel="stylesheet" href="style.css?v=11">
+    <link rel="stylesheet" href="style.css?v=12">
 </head>
 
 <body>
@@ -110,28 +110,23 @@
         </ul>
     </section>
 
+    <!-- NOUVEAU PROJET -->
     <section class="card">
         <h2>Conception et analyse d’une architecture réseau segmentée</h2>
 
         <h3>Objectif</h3>
-        <p>Concevoir une architecture réseau segmentée en VLAN avec communication inter-VLAN, puis analyser les échanges réseau afin de valider le fonctionnement et comprendre les mécanismes protocolaires</p>
-
-        <h3>Architecture simplifiée</h3>
-        <ul>
-            <li>VLAN 10 : <em>utilisateurs</em></li>
-            <li>Switch : <em>segmentation VLAN 10 / VLAN 20</em></li>
-            <li>Routeur : <em>routage inter-VLAN</em></li>
-            <li>VLAN 20 : <em>services</em></li>
-        </ul>
+        <p>Concevoir une architecture réseau segmentée en VLAN avec communication inter-VLAN, puis analyser les échanges réseau afin de valider le fonctionnement</p>
 
         <h3>Mise en œuvre</h3>
+
+        <img class="schema" src="schema-reseau.png" alt="Schéma architecture réseau VLAN">
+
         <ul>
             <li>Création de VLAN : <em>VLAN 10 et VLAN 20</em></li>
             <li>Mise en place d’un plan d’adressage IP : <em>adressage par sous-réseau</em></li>
             <li>Configuration des interfaces réseau</li>
             <li>Mise en place du routage inter-VLAN</li>
             <li>Configuration des équipements : <em>switch et routeur</em></li>
-            <li>Déploiement sur environnement virtualisé : <em>VirtualBox / Open vSwitch</em></li>
         </ul>
 
         <h3>Validation technique</h3>
@@ -139,25 +134,6 @@
             <li>Tests de connectivité : <em>ping entre VLAN</em></li>
             <li>Vérification de la communication inter-réseaux</li>
             <li>Contrôle de la segmentation réseau</li>
-            <li>Analyse des flux entre machines</li>
-        </ul>
-
-        <h3>Analyse du trafic réseau</h3>
-        <p>Capture et analyse des échanges avec Wireshark afin de valider le fonctionnement du réseau</p>
-
-        <h4>Exemple : établissement d’une connexion TCP</h4>
-        <ul>
-            <li>Client → Serveur : <em>SYN</em></li>
-            <li>Serveur → Client : <em>SYN-ACK</em></li>
-            <li>Client → Serveur : <em>ACK</em></li>
-        </ul>
-
-        <h4>Observations</h4>
-        <ul>
-            <li>Identification des échanges TCP entre les VLAN</li>
-            <li>Analyse des requêtes DNS et des flux applicatifs</li>
-            <li>Vérification du passage des paquets via le routeur</li>
-            <li>Validation du routage inter-VLAN</li>
         </ul>
 
         <h3>Résultats</h3>
@@ -165,14 +141,12 @@
             <li>Communication fonctionnelle entre les VLAN</li>
             <li>Segmentation réseau correctement appliquée</li>
             <li>Routage opérationnel</li>
-            <li>Validation des échanges réseau via analyse de paquets</li>
         </ul>
 
         <h3>Compétences mobilisées</h3>
         <ul>
             <li>Réseaux : <em>VLAN, TCP/IP, routage inter-VLAN</em></li>
-            <li>Analyse : <em>Wireshark, lecture de paquets</em></li>
-            <li>Systèmes : <em>virtualisation réseau</em></li>
+            <li>Analyse : <em>Wireshark</em></li>
             <li>Méthodologie : <em>conception, test, validation</em></li>
         </ul>
     </section>
