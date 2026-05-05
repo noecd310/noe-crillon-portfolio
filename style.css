@@ -86,6 +86,21 @@ main {
     margin-bottom: 12px;
 }
 
+.schema {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    margin: 20px auto 35px auto;
+    border-radius: 18px;
+    background: white;
+}
+
+a {
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 em {
     font-style: italic;
 }
@@ -107,5 +122,9 @@ em {
     .card p,
     .card li {
         font-size: 17px;
+    }
+
+    .schema {
+        border-radius: 14px;
     }
 }
