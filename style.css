@@ -3,8 +3,18 @@
 body {
     margin: 0;
     font-family: 'Barlow', Arial, sans-serif;
-    background: #e8ddd4;
     color: #1f1f1f;
+
+    background: linear-gradient(
+        -45deg,
+        #e8ddd4,
+        #e3d2c7,
+        #d9c3b5,
+        #e8ddd4
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
 }
 
 .hero {
@@ -128,6 +138,18 @@ a:hover {
 
 em {
     font-style: italic;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media (max-width: 768px) {
